@@ -20,6 +20,7 @@ import VideosPage from "./Components/Authenticated/Videos/VideosPage";
 import NotFound from "./NotFound";
 import guro_bg from "./assets/img/score_bg.png";
 import BiblePage from "./Components/Authenticated/Bible/BiblePage";
+import UpdloadFile from "./Components/Authenticated/UploadFile/UploadFile.jsx";
 
 //Testing
 
@@ -55,6 +56,7 @@ function App() {
           <Route path="/lessonviewer" element={<LessonViewer />} />
           <Route path="/Schoolbook" element={<SchoolBookPage />} />
           <Route path="/bible" element={<BiblePage />} />
+          <Route path="/Upload" element={<UpdloadFile />} />
           <Route path="subjects/:grade" element={<Subjects />} />
           <Route path="quarters/:subjectId" element={<Quarters />} />
           <Route path="topics" element={<Topics />} />

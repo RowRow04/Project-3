@@ -48,6 +48,13 @@ const items = [
     image: bibleImg,
     link: "/bible",
   },
+
+  {
+    id: 6,
+    title: "Add File",
+    image: bibleImg,
+    link: "/Upload",
+  },
 ];
 
 function searchItems(items, searchTerm) {
