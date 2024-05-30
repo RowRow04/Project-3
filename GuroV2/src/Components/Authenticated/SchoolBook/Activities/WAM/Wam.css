@@ -1,0 +1,20 @@
+    .score {
+    font-weight: bold;
+    color: #333;
+  }
+
+    .hearts {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .heart {
+      width: 20px;
+      height: 20px;
+      margin: 5px;
+    }
+  
+    .broken {
+      opacity: 0.5;
+    }
+  

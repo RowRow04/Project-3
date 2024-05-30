@@ -1,0 +1,18 @@
+.result {
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.result.error {
+  color: white !important;
+  background-color: red;
+}
+
+.result.success {
+  color: white !important;
+  background-color: green;
+}
+.result-text {
+  display: flex;
+  justify-content: center;
+}

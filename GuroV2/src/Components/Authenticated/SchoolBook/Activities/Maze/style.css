@@ -1,0 +1,299 @@
+.maze-container {
+}
+
+.setting button {
+  font-size: 15px;
+}
+
+.setting input {
+  font-size: 20px;
+}
+
+.topWall {
+  border-top: 2px solid black;
+}
+
+.rightWall {
+  border-right: 2px solid black;
+}
+
+.bottomWall {
+  border-bottom: 2px solid black;
+}
+
+.leftWall {
+  border-left: 2px solid black;
+}
+
+.sol div {
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+  background: peachpuff;
+  display: inline-block;
+}
+
+.sol1 div {
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+  background: black;
+  display: inline-block;
+}
+
+/* .currentPosition div {
+  background: salmon;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  display: block;
+} */
+
+.currentPosition div {
+  background-image: url(../../../../../assets/img/mazeChar.png);
+  background-size: cover;
+  /* Adjust the background size if needed */
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  display: block;
+}
+
+.currentPosition .tooltip {
+  visibility: visible;
+  align-items: center;
+}
+
+.tooltip {
+  display: flex;
+  visibility: hidden;
+  position: absolute;
+  padding: 5px 5px;
+  z-index: 1;
+  color: black;
+  font-weight: 800;
+}
+
+.destination1 div {
+  background: #ffc312;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  display: block;
+}
+
+.destination2 div {
+  background: #ed4c67;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  display: block;
+}
+
+.destination3 div {
+  background: #12cbc4;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  display: block;
+}
+
+.destination4 div {
+  background: #fda7df;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  display: block;
+}
+
+
+
+.destination5 div {
+  background: #bc7af9;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  display: block;
+}
+
+.destination6 div {
+  background: #7aa874;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  display: block;
+}
+
+.choice-destination1 {
+  background: #ffc312;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: block;
+}
+
+.choice-destination2 {
+  background: #ed4c67;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: block;
+}
+
+.choice-destination3 {
+  background: #12cbc4;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: block;
+}
+
+.choice-destination4 {
+  background: #fda7df;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: block;
+}
+
+.choice-destination5 {
+  background: #bc7af9;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: block;
+}
+
+.choice-destination6 {
+  background: #7aa874;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: block;
+}
+
+.maze-currentPosition {
+  background: salmon;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: block;
+}
+
+.destination1.dest1 .answertip {
+  visibility: visible;
+  align-items: center;
+}
+
+.destination2.dest2 .answertip {
+  visibility: visible;
+  align-items: center;
+}
+
+.destination3.dest3 .answertip {
+  visibility: visible;
+  align-items: center;
+}
+
+.destination4.dest4 .answertip {
+  visibility: visible;
+  align-items: center;
+}
+
+.answertip {
+  visibility: hidden;
+  position: absolute;
+  padding: 5px 0;
+  z-index: 1;
+  margin-top: -25px;
+  margin-left: -5px;
+  color: black;
+  font-weight: 800;
+}
+
+.currentPosition.destination div {
+  animation: rainbowBall 5s infinite;
+}
+
+@keyframes rainbowBall {
+  0% {
+    background-color: gold;
+  }
+  15% {
+    background-color: coral;
+  }
+  29% {
+    background-color: papayawhip;
+  }
+  43% {
+    background-color: darkseagreen;
+  }
+  57% {
+    background-color: lightcyan;
+  }
+  71% {
+    background-color: dodgerblue;
+  }
+  84% {
+    background-color: violet;
+  }
+  100% {
+    background-color: indigo;
+  }
+}
+
+#maze {
+  margin: 16px;
+  border-collapse: collapse;
+}
+
+#maze td {
+  height: 30px;
+  width: 30px;
+}
+
+.info {
+  margin-top: 20px;
+  width: 100%;
+  background: cornsilk;
+  padding: 3px;
+  font-size: 20px;
+}
+
+.info p {
+  text-transform: uppercase;
+  color: forestgreen;
+}
+
+.maze-table {
+  position: absolute;
+}
+/* 
+.ribbon {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: blue;
+}
+
+.ribbon:before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid red;
+  border-top: 5px solid red;
+  border-bottom: 5px solid transparent;
+}
+
+.ribbon:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  border-left: 5px solid red;
+  border-right: 5px solid transparent;
+  border-top: 5px solid red;
+  border-bottom: 5px solid transparent;
+} */

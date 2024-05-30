@@ -1,0 +1,38 @@
+/* .guessword {
+  display: flex;
+  margin: 2rem 0;
+  justify-content: center;
+  color: black !important;
+} */
+.guess-letter {
+  padding: 0.5rem 1rem;
+  margin: 0 0.2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(44, 44, 44) !important;
+}
+
+.guessword {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2px;
+  justify-content: center;
+  color: black !important;
+}
+
+.guessword .cube {
+  margin: 1rem; /* Add margin around each cube */
+}
+
+/* Add media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .guessword {
+    flex-wrap: wrap; /* Allow the cubes to wrap onto multiple lines */
+    justify-content: flex-start; /* Align cubes to the left */
+  }
+
+  .guessword .cube {
+    width: 50%; /* Make each cube take 50% width of the container */
+    max-width: 200px; /* Set a maximum width for the cubes */
+  }
+}

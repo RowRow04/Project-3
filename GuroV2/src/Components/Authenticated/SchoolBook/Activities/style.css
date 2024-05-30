@@ -1,0 +1,52 @@
+.hangman {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clues {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.clue {
+  background-color: white !important;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.direction {
+  flex: 1;
+  padding: 4px;
+}
+
+.knwpWu {
+  background-color: #ffff00 !important;
+}
+
+.header {
+  color: black !important;
+  position: inherit !important;
+  text-align: start !important;
+}
+
+/* comment */
+@media only screen and (max-width: 600px) {
+  .jCXKZM {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .jCXKZM {
+    width: 400px !important;
+    margin: auto !important;
+  }
+}
+
+
+.prog .ant-progress .ant-progress-steps-outer .ant-progress-steps-item {
+  width: 95px !important;
+}

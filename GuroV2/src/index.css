@@ -1,0 +1,383 @@
+/* latin */
+@font-face {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url(./assets/fonts/poppins/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2)
+	  format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+	  U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+	  U+FEFF, U+FFFD;
+  }
+  
+  @font-face {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(./assets/fonts/poppins/pxiEyp8kv8JHgFVrJJfecg.woff2) format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+	  U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+	  U+FEFF, U+FFFD;
+  }
+  
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  
+  * {
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins";
+  }
+  .patuaOne {
+	font-family: "Patua One";
+  }
+  
+  ::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+	border-radius: 10px;
+	background-color: #f5f5f500;
+  }
+  
+  ::-webkit-scrollbar {
+	height: 6px;
+	width: 6px;
+	background-color: #f5f5f500;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background-color: #0015291f;
+  }
+  
+  /* @layer components {
+	  .activeLink {
+		  color: rgb(207, 115, 40);
+		  border-bottom: 2px solid rgb(207, 115, 40);
+		  padding-bottom: 2px;
+		  transition: all ease .3s;
+	  }
+	} */
+  
+  .active-link {
+	background-color: #f7f0e7;
+  }
+  
+  .navbar {
+	background: transparent;
+  }
+  
+  .navbar.active {
+	background: black;
+  }
+  
+  .active {
+	color: #363636;
+  }
+  
+  .button {
+	display: inline-block;
+	margin: 4px 2px;
+	background-color: transparent;
+	font-size: 14px;
+	padding-left: 32px;
+	padding-right: 32px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  }
+  
+  .button:hover {
+	transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	background-color: white;
+	color: black;
+  }
+  
+  .search-bar {
+	background: #ffffff;
+	opacity: 0.5;
+	border-radius: 5px;
+	border: none;
+	height: 60px;
+	width: 1000px;
+	padding-left: 30px;
+  }
+  ::placeholder {
+	padding-left: 10px;
+  }
+  
+  .search-container {
+	position: relative;
+	display: inline-block;
+	margin: 4px 2px;
+	height: 50px;
+	width: 50px;
+	vertical-align: bottom;
+  }
+  
+  .mglass {
+	display: inline-block;
+	pointer-events: none;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+  }
+  
+  .searchbutton {
+	position: absolute;
+	font-size: 22px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .search:focus + .searchbutton {
+	transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	background-color: white;
+	color: black;
+  }
+  
+  .search {
+	position: absolute;
+	left: 49px; /* Button width-1px (Not 50px/100% because that will sometimes show a 1px line between the search box and button) */
+	/* background-color: white; */
+	outline: none;
+	border: none;
+	padding: 0;
+	width: 0;
+	height: 100%;
+	z-index: 10;
+	transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+  }
+  
+  .search:focus {
+	width: 375px; /* Bar width+1px */
+	padding: 0 16px 0 0;
+  }
+  
+  .expandright {
+	left: auto;
+	right: 49px; /* Button width-1px */
+  }
+  
+  .expandright:focus {
+	padding: 0 0 0 16px;
+  }
+  
+  .rect {
+	position: absolute;
+	width: 867px;
+	height: 248px;
+	left: 78px;
+	top: 663px;
+  
+	background: #fbfbfb;
+	border-radius: 15px;
+  }
+  
+  .rect-2 {
+	position: absolute;
+	width: 566px;
+	height: 198px;
+	left: 342px;
+	top: 692px;
+  }
+  
+  /*custom css*/
+  /*another neumorphics design https://codepen.io/ryanparag/pen/OJVJrxZ */
+  
+  :root {
+	--error-color: #f94144;
+	--success-color: #2a9d8f;
+	--text-color: #000000;
+	--link-active-color: #4299e1;
+	--gradient-start-color: #bd4a8e;
+	--gradient-end-color: #e95c7c;
+	--gradient: linear-gradient(
+	  0,
+	  var(--gradient-start-color),
+	  var(--gradient-end-color)
+	);
+	--background: #f7f0e7;
+	--highlight: #ffffff;
+	--shadow: #cbd2d8;
+	/* --neumorph-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px #fff;
+	--neumorph-shadow-inset: inset 4px 4px 8px rgba(0, 0, 0, 0.2),
+	  inset -4px -4px 8px #fff; */
+  
+	--neumorph-shadow: 4px 4px 8px var(--shadow), -4px -4px 8px var(--highlight),
+	  -2px -2px 4px var(--highlight);
+  
+	--neumorph-shadow-inset: inset 4px 4px 8px var(--shadow),
+	  inset -4px -4px 8px var(--highlight), inset -4px -4px 4px var(--shadow),
+	  inset -2px -2px 2px var(--highlight), -2px -2px 6px var(--highlight),
+	  -2px -2px 8px var(--shadow), 2px 2px 2px var(--highlight),
+	  4px 4px 8px var(--shadow);
+  
+	--neumorph-hover-bg: #eff2f5;
+  }
+  
+  /* dark theme */
+  .dark {
+	--text-color: #b4bfce;
+	/* --link-active-color: #e95c7c; */
+	--gradient-start-color: #bd4a8e;
+	--gradient-end-color: #e95c7c;
+	--background: #222;
+	--highlight: rgb(53, 52, 52);
+	--shadow: rgb(19, 19, 19);
+	/* --neumorph-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.8),
+	  -4px -4px 8px 0 rgba(255, 255, 255, 0.1);
+	--neumorph-shadow-inset: inset 4px 4px 8px 0 rgba(0, 0, 0, 0.8),
+	  inset -4px -4px 8px 0 rgba(255, 255, 255, 0.1);
+	--neumorph-text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.5); */
+	--neumorph-shadow: 4px 4px 8px var(--shadow), -4px -4px 8px var(--highlight),
+	  -2px -2px 4px var(--highlight);
+  
+	--neumorph-shadow-inset: inset 4px 4px 8px var(--shadow),
+	  inset -4px -4px 8px var(--highlight), inset -4px -4px 4px var(--shadow),
+	  inset -2px -2px 2px var(--highlight), -2px -2px 6px var(--highlight),
+	  -2px -2px 8px var(--shadow), 2px 2px 2px var(--highlight),
+	  4px 4px 8px var(--shadow);
+	--neumorph-hover-bg: rgb(41, 40, 40);
+  }
+  .app {
+	min-height: 100vh;
+  }
+  input,
+  select {
+	padding: 0.8rem;
+	color: var(--text-color);
+	font-weight: bold;
+	width: 13rem;
+	outline: 0;
+  }
+  
+  .neumorph {
+	background: transparent;
+	color: var(--text-color);
+	border-radius: 12px;
+	box-shadow: 5px 5px #ff9a0e;
+	transition: color background-color box-shadow 100ms ease-in;
+  }
+  .neumorph-guess {
+	background: transparent;
+	/* color: var(--text-color); */
+	/* border-radius: 12px; */
+	/* border: 1px !important; */
+	/* border-style: solid !important; */
+	/* border-color: #000 !important; */
+	/* box-shadow: 2px 2px #888888 !important; */
+  }
+  .neumorph-guess.invert {
+	background: transparent;
+	color: var(--text-color);
+	border-radius: 12px;
+	border: 1px !important;
+	border-style: solid !important;
+	border-color: #000 !important;
+	box-shadow: 2px 2px #888888 !important;
+  }
+  .neumorph.disabled {
+	color: #000;
+  }
+  .neumorph.invert {
+	background-color: #ffa82f;
+  }
+  .neumorph:not(.disabled):hover {
+	/* color: var(--link-active-color); */
+	/* background: var(--neumorph-hover-bg); */
+	background: #ffca56;
+  }
+
+  .responsive-document {
+	width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+	.responsive-document {
+	  width: 80%;
+	}
+  }
+  
+  @media (max-width: 480px) {
+	.responsive-document {
+	  width: 100%;
+	}
+  }
+
+  #pdf-download {
+	display: none;
+  }
+  
+  .neumorph:not(.disabled):active {
+	box-shadow: var(--neumorph-shadow-inset);
+  }
+  .neumorph.invert:not(.disabled):active {
+	box-shadow: var(--neumorph-shadow);
+  }
+
+  .ant-btn {
+    background-color: #4a4e69 !important;
+    color: white;
+    border-width: 0;
+    border-bottom-width: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: #303945;
+}
+
+.ant-btn:hover {
+	color: white !important;
+	background-color: none;
+	border-color: #303945 !important;
+}
+
+button.ant-switch {
+	background-color: #888888 !important;
+  }
+  
+  button.ant-switch.ant-switch-checked {
+	background-color: #4096ff !important;
+  }
+
+  
+
+  .search-br {
+    background: #FFFFFF;
+    /* opacity: 0.5; */
+    border-radius: 10px;
+  }
+
+  .dropdown-br {
+    background: #FFFFFF;
+    opacity: 0.5;
+    border-radius: 10px;
+  }
+
+  .active {
+
+    font-weight: bold; /* Set the font weight to make the selected item more prominent */
+    color: #4A4E69;
+  }
+  
+  
